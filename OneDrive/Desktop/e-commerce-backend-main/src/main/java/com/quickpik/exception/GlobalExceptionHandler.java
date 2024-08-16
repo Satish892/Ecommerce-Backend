@@ -15,14 +15,6 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 import com.quickpik.payload.ApiResponse;
 
-/**
-
-GlobalExceptionHandler is a class that implements the exception handling
-mechanism of the application. We are handling ResourceNotFoundException, ConstraintViolationException
-and sending custom error messages in response
-@author Sourav Choudhary
-*/
-
 @ControllerAdvice
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 	@Override
