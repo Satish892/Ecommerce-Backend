@@ -7,26 +7,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import com.quickpik.dtos.PageableResponse;
 
-/**
- * 
- * This class contains a helper method to convert a Spring Data Page of entities
- * into a pageable response of DTOs using the ModelMapper library for mapping.
- * The method is generic and can be used for any entity-DTO mapping.
- * 
- * @author Sourav Choudhary
- */
-
 public class Helper {
-
-	/**
-	 * Converts a Spring Data Page of entities into a pageable response of DTOs.
-	 *
-	 * @param page The Spring Data Page of entities to be converted.
-	 * @param type The class of the DTO to be mapped.
-	 * @return A PageableResponse object containing the mapped DTOs and page
-	 *         information.
-	 */
-	
 	// U, V are generic types
 	public static <U, V> PageableResponse<V> getPageableResponse(Page<U> page, Class<V> type) {
 		// Get the list of entities from the Spring Data Page
